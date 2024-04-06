@@ -1,0 +1,76 @@
+{
+  "title":"O que esperar de seus relacionamentos ?",
+  "explanation":["O questionário avalia dois conceitos: conhecer a si mesmo e conhecer o outro. Eixo x corresponde a quanto esforço coloca em conhecer a si mesmo e y em conhecer o outro."],
+  "questions":[
+    {
+      "id":1,
+      "question": "Quanto tempo por semana você separa para tentar entender sua própria história ?",
+      "options":[
+        {"id": 1, "name":"0 horas", "alias":"-X"},
+        {"id": 2, "name":"1 hora", "alias":"-X"},
+        {"id": 3, "name":"2 horas", "alias":"C"},
+        {"id": 4, "name":"5 horas", "alias":"X"},
+        {"id": 5, "name":"8 horas ou mais", "alias":"X"}
+      ]
+    },
+    {
+      "id":2,
+      "question": "Quanto tempo por semana você tenta entender o que o rege(razão,prazer etc) ?",
+      "options":[
+        {"id": 1, "name":"0 horas", "alias":"-X"},
+        {"id": 2, "name":"1 hora", "alias":"-X"},
+        {"id": 3, "name":"2 horas", "alias":"C"},
+        {"id": 4, "name":"5 horas", "alias":"X"},
+        {"id": 5, "name":"8 horas ou mais", "alias":"X"}
+      ]
+    },
+    {
+      "id":2,
+      "question": "Quanto tempo por semana você tenta entender quais foram os impactos na vida das pessoas por conta do que escolheu para o reger ?",
+      "options":[
+        {"id": 1, "name":"0 horas", "alias":"-Y"},
+        {"id": 2, "name":"1 hora", "alias":"-Y"},
+        {"id": 3, "name":"2 horas", "alias":"C"},
+        {"id": 4, "name":"5 horas", "alias":"Y"},
+        {"id": 5, "name":"8 horas ou mais", "alias":"Y"}
+      ]
+    },
+    {
+      "id":3,
+      "question": "Quanto tempo por semana você faz avaliação de suas palavras e ações e como isso demonstra que está sendo regido pelo que escolheu ?",
+      "options":[
+        {"id": 1, "name":"0 horas", "alias":"-X"},
+        {"id": 2, "name":"1 hora", "alias":"-X"},
+        {"id": 3, "name":"2 horas", "alias":"C"},
+        {"id": 4, "name":"5 horas", "alias":"X"},
+        {"id": 5, "name":"8 horas ou mais", "alias":"X"}
+      ]
+    },
+    {
+      "id":4,
+      "question": "Quanto tempo por semana você pensa em como ajudar a pessoa que diz amar a ser alguém melhor? ",
+      "options":[
+        {"id": 1, "name":"0 horas", "alias":"-Y"},
+        {"id": 2, "name":"1 hora", "alias":"-Y"},
+        {"id": 3, "name":"2 horas", "alias":"C"},
+        {"id": 4, "name":"5 horas", "alias":"Y"},
+        {"id": 5, "name":"8 horas ou mais", "alias":"Y"}
+      ]
+    },
+    {
+      "id":5,
+      "question": "Em uma situação em que você tivesse que escolher entre o certo e manter a pessoa com você o que escolheria ?",
+      "options":[
+        {"id": 1, "name":"O certo", "alias":"Y"},
+        {"id": 2, "name":"Manter a pessoa comigo", "alias":"-Y"}
+      ]
+    }
+  ],
+  "results":{
+    "C": "Você está fazendo pouco esforço em qualquer direção. Resultados podem demorar e você pode perder uma grande pessoa na vida.",
+    "XY": "Você está no caiminho certo tentando entender a si para não enganar a si mesmo e ao outro ao mesmo tempo que se dedica a entender o outro para poder ajudá-lo da melhor maneira possível.",
+    "-X-Y": "Você não não está focado nas questões importantes para desenvolver laços verdadeiros e corre sério risco de apenas ferir a si e a outros que diz amar.",
+    "-XY": "Você está focado demais no outro e não se vê. Há um sério risco de um dia entender que não fez as melhores escolhas por não se conhecer e melhorar.",
+    "X-Y":"Você está focando apenas em si. Isto demonstra que não há interesse em conhecer o outro e que não há intenção de ajudá-lo a se desenvolver. Pode ser que no momento isso seja uma necessidade, mas não esqueça que não há amor sem compreensão."
+  }
+}

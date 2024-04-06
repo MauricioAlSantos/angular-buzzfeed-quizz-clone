@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import quizz_questions from "../../../assets/data/quizz_questions.json"
+import quizz_questions from "../../../assets/data/relationship_quizz_questions.json"
 
 @Component({
   selector: 'app-quizz',
@@ -16,7 +16,7 @@ export class QuizzComponent implements OnInit {
 
   answers:string[] = []
   answerSelected:string =""
-
+  
   questionIndex:number =0
   questionMaxIndex:number=0
 
@@ -60,8 +60,8 @@ export class QuizzComponent implements OnInit {
   }
 
   async checkResult(anwsers:string[]){
-
-    const result = anwsers.reduce((previous, current, i, arr)=>{
+    
+    let result = anwsers.reduce((previous, current, i, arr)=>{
         if(
           arr.filter(item => item === previous).length >
           arr.filter(item => item === current).length
@@ -71,7 +71,16 @@ export class QuizzComponent implements OnInit {
           return current
         }
     })
+    if(result!="C"){
+      let x = this.answers.filter((value)=>value=="X").length;
+      let negx = this.answers.filter((value)=>value=="-X").length;
+      let y = this.answers.filter((value)=>value=="X").length;
+      let negy = this.answers.filter((value)=>value=="-X").length;
+      let resX = x>negx?"X":"-X";
+      let resY = y>negy?"Y":"-Y";
 
+      result= resX+resY;
+    }
     return result
   }
 
